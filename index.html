@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Jogo HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <!-- Placar e Informações -->
+        <header id="ui">
+            <span>Pontuação: <strong id="score">0</strong></span>
+            <span>Recorde: <strong id="highScore">0</strong></span>
+        </header>
+
+        <!-- Canvas onde o jogo acontece -->
+        <canvas id="gameCanvas" width="800" height="450"></canvas>
+
+        <!-- Menu de Fim de Jogo (Game Over) -->
+        <div id="menu" class="hidden">
+            <h2 id="menu-title">Fim de Jogo</h2>
+            <p>Sua pontuação final: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
